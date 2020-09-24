@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test Project2</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Asap&family=Catamaran:wght@700&display=swap" family=Catamaran:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<img src="images/logoLogo.svg" alt="Logo">
+</header>
+
+<main>
+
+<div class="nav">
+  <ul class="nav-bullets">
+    <li>
+      <div class="number">1</div>
+      <div class="title">Select Clinic</div>
+    </li>
+    <li class="active">
+      <div class="number">2</div>
+      <div class="title">Personal Details</div>
+    </li>
+    <li class="inactive">
+      <div class="number">3</div>
+      <div class="title">System Setup</div>
+    </li>
+  </ul>
+
+  <div class="lines">
+    <div></div>
+    <div class="inactive"></div>
+  </div>
+</div>
+
+<section>
+
+<h1>Personal Details</h1>
+
+<p class="improvements">We need these details to verify and create your Mindpax Doctor account</p>
+
+<div class="personal">
+
+<div>
+<h2>Title</h2>
+<select id="form-group" name="title"required>
+        <option disabled selected value>Title</option>
+        <option value="Bachelor">BA</option>
+        <option value="Master">MA/M.S./MS/M.Sc.</option>
+        <option value="Doctorate">Ph.D./PhDr./RNDr./JUDr.</option>
+        <option value="None"></option>    
+</select>
+</div>
+
+<div class="form-group">
+        <label id="name-label" for="name"><h2 class="firstnm">First Name</h2></label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="First Name"required>
+</div>
+
+<div class="form-group">
+        <label id="last-label" for="lastname"><h2 class="lastnm">Last Name</h2></label>
+        <input type="text" name="lastname" id="last" class="form-control" placeholder="Last Name" required>
+</div>
+</div> 
+
+<div class="form-align">
+
+<div>
+<h2>Position</h2>
+<select class="pstn" name="position"required>
+        <option disabled selected value>Select your position</option>
+        <option value="General Doctor">General Doctor</option>
+        <option value="Dentist">Dentist</option>
+        <option value="Physiotherapist">Physiotherapist</option>
+        <option value="Gynecologist">Gynecologist</option> 
+</select>
+</div>
+
+<div id="email-form">
+        <label id="email-label" for="email"><h2>Email</h2></label>
+        <input type="email" name="email" id="email" class="form-email" placeholder="Enter email address"required>
+</div> 
+
+<div id="phone-form">
+        <label id="phone-label" for="phonenumber"><h2>Phone Number</h2></label>
+        <input type="phone" name="phone" id="phone" class="form-phone" placeholder="Enter phone number"required>
+</div>   
+
+<div id="password-form">
+        <label id="password-label" for="password"><h2>Password</h2></label>
+        <input type="password" name="password" id="password" class="form-password" placeholder="Enter password"required>
+</div>   
+
+<div id="confirmation-form">
+        <label id="confirmation-label" for="confirmation"><h2>Confirm Password</h2></label>
+        <input type="passconfirm" name="confirmpassword" id="confirm" class="form-confirmation" placeholder="Confirm password"required>
+</div> 
+</div>
+
+<button class="btn">
+<h2 class="boton">Continue</h2>
+</button>
+
+<footer><h2 class="footer">Made with ♥ by Camille</h2></footer>
+</section>
+
+</main>
+</body>
